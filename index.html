@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+a.one{background-color:lightblue;}
+a.one:visited {background-color:red;}
+a.one:hover {background-color:orange;}
+a.one:active{background-color:orange}
+a.two{background-color:cyan ;}
+a.two:visited {background-color:red;}
+a.two:hover {background-color:green;}
+a.two:active {background-color:green;}
+#firstbox {
+width: 300px;
+height: 150px;
+background-color: blue;
+border: solid 2px transparent;
+}  
+#secondbox {
+width: 300px;
+height: 150px;
+background-color: cyan;
+border: solid 2px transparent;
+}
+a.one:active ~ #firstbox {
+background-color: lightblue;
+color: blue;
+}
+a.two:active ~ #secondbox {
+border-style: dotted; 
+border-width:10px;
+border-color:green;
+}    
+</style>
+</head>
+<body>
+<a class="one" > First link </a>
+<a class="two" > Second link </a>
+<br>
+<div id="firstbox">DIVS 1 HERE</div>
+<div id="secondbox">DIVS 2 HERE</div>
+</body>
+</br>    
+</html>
